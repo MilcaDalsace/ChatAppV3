@@ -10,7 +10,6 @@ fi
 
 docker build -t chatapp:$version .
 
-git tag $version $commit_hash
+git tag ${version} ${commit_hash}
 
-git push origin $version
-
+git push origin ${version}
